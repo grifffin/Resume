@@ -1,0 +1,159 @@
+% Resume in LaTeX
+% Author: Griffin Hiers
+% License: MPL
+\documentclass[letterpaper,14pt]{extarticle}
+
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+% \usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\definecolor{color1}{RGB}{255, 0, 0}
+\definecolor{color2}{RGB}{150, 0, 0}
+
+% Font
+\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle{} #1}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\raggedbottom{}
+\raggedright{}
+
+\titleformat{\section}
+  {\normalfont\sffamily\large\bfseries\color{color1}}
+  {\thesection}{1em}{}
+
+\titlespacing*{\section}
+{0pt}{8pt}{4pt}
+\setlength{\multicolsep}{0pt}
+
+%-----------RESUME STARTS HERE--------
+
+\begin{document}
+
+%-----------HEADING-------------------
+\begin{multicols}{2}
+  % first column
+  \vspace*{30px}
+  % those phantoms are to block ligatures, lol
+  \huge {Grif\phantom{}f\phantom{}in Hiers}
+  \normalsize \\
+  \begin{tikzpicture}
+    \fill[color1] (0,0) rectangle (9,0.2);
+  \end{tikzpicture}
+
+  % second column
+  \begin{enumerate}[noitemsep]
+    \item[]{\faHome{} 88C Alexander Street\\Charleston, SC 29072}
+    \item[]{\faPhone{} (803) 605--5558}
+    \item[]{\faEnvelope{} hiersgp@g.cofc.edu}
+    \item[]{\faGithub{} github.com/grifffin}
+  \end{enumerate}
+\end{multicols}
+\vspace*{13pt}
+
+%-----------SKILLS--------------------
+\section*{SKILLS}
+\begin{multicols}{4}
+  Python\\
+  HTML/CSS/JS\\
+  Linux\\
+  Django\\
+  Java\\
+  Angular\\
+  SQL\\
+  Bash\\
+\end{multicols}
+%-----------EDUCATION-----------------
+\section*{EDUCATION}
+  \textbf{College of Charleston}
+  \hspace*{\fill}
+  \textcolor{color2}{August 2015 --- May 2019}
+  \\
+  \textcolor{color2}{
+    \textit{
+      \qquad{} Bachelor of Science in Computer Science
+    }
+  }
+%-----------EXPERIENCE----------------
+\section*{EXPERIENCE}
+\textbf{Booz Allen Hamilton}
+  \hspace*{\fill}
+  \textcolor{color2}{June 2018 --- August 2018}
+  \\ 
+  \textcolor{color2}{
+    \textit{
+      \qquad{} Summer Games Intern
+    }
+  }
+
+  \begin{itemize}[itemsep=0pt, topsep=2pt]
+    \item{Worked on a team of five interns to create a web application for use by the U.S. Navy to monitor sailor fatigue and proficiency}
+    \item{Took on a lead developer role, creating the website in Django} \end{itemize}
+
+  \textbf{Research in Web Development}
+  \hspace*{\fill}
+  \textcolor{color2}{September 2017 --- September 2018}
+  \\ 
+  \textcolor{color2}{
+    \textit{
+      \qquad{} Research Assistant
+    }
+  }
+
+  \begin{itemize}[itemsep=0pt, topsep=2pt]
+    \item{Assisting Dr. Ayman Hajja with several Django based web projects, including a website to enable researchers to label audio files containing stuttering, and other projects to be teaching aides for Hajja’s classes}
+  \end{itemize}
+
+
+  \textbf{College of Charleston Computer Science}
+  \hspace*{\fill}
+  \textcolor{color2}{January 2017 --- December 2018}
+  \\ 
+  \textcolor{color2}{
+    \textit{
+      \qquad{} Introductory Programming Teaching Assistant
+    }
+  }
+
+  \begin{itemize}[itemsep=0pt, topsep=2pt]
+    \item{Gaining communication skills by helping students work through introductory Python labs}
+    \item{Teaching the fundamentals of programming: loops, conditionals, functions, etc.}
+  \end{itemize}
+
+
+%-----------EXTRACURRICULAR-----------
+\section*{EXTRACURRICULAR}
+  {International Collegiate Programming Contest}
+  \hspace*{\fill}
+  \textcolor{color2}{November 2016 \& November 2017}
+  \\ 
+  \textcolor{color2}{
+    \textit{
+      \qquad{} Two Time College of Charleston Division 2 Site Champ
+    }
+  }
+
+  \vspace*{4pt}
+
+  {Association for Computing Machinery}
+  \hspace*{\fill}
+  \textcolor{color2}{2015 --- 2018}
+  \\ 
+  \textcolor{color2}{
+    \textit{
+      \qquad{} Web Master
+    }
+  }
+\end{document}
