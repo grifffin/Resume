@@ -5,17 +5,22 @@
 
 \usepackage[empty]{fullpage}
 \usepackage{enumitem}
+% FA Icons for the contact info
 \usepackage{fontawesome}
-% \usepackage{lipsum}
+% Columns are used in the header and skills
 \usepackage{multicol}
 \usepackage{titlesec}
+% xcolor let's me define the colors beforehand
 \usepackage{xcolor}
+% tikz draws the rectangle under my name, probably overkill
 \usepackage{tikz}
 
+% color1 is used for the section titles and the rectangle
 \definecolor{color1}{RGB}{255, 0, 0}
+% color2 is used for dates and descriptiony stuff
 \definecolor{color2}{RGB}{150, 0, 0}
 
-% Font
+% Font - Fira Sans
 \usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\firaoldstyle{} #1}}
@@ -30,10 +35,12 @@
 \raggedbottom{}
 \raggedright{}
 
+% sets the color and fonts of the section titles
 \titleformat{\section}
   {\normalfont\sffamily\large\bfseries\color{color1}}
   {\thesection}{1em}{}
 
+% sets the spacing around the section titles
 \titlespacing*{\section}
 {0pt}{8pt}{4pt}
 \setlength{\multicolsep}{0pt}
@@ -45,12 +52,14 @@
 %-----------HEADING-------------------
 \begin{multicols}{2}
   % first column
-  \vspace*{30px}
+  % probably a better way to do this
+  \vspace*{25pt}
   % those phantoms are to block ligatures, lol
   \huge {Grif\phantom{}f\phantom{}in Hiers}
   \normalsize \\
+  % drawing the rectangle
   \begin{tikzpicture}
-    \fill[color1] (0,0) rectangle (9,0.2);
+    \fill[color1] (0,0) rectangle (250pt,6pt);
   \end{tikzpicture}
 
   % second column
@@ -113,7 +122,7 @@
   }
 
   \begin{itemize}[itemsep=0pt, topsep=2pt]
-    \item{Assisted Dr. Ayman Hajja with several Django based web projects, including a website to enable researchers to label audio files containing stuttering, and other projects to be teaching aides for Hajja’s classes}
+    \item{Assisted Dr.\ Ayman Hajja with several Django based web projects, including a website to enable researchers to label audio files containing stuttering, and other projects to be teaching aides for Hajja’s classes}
   \end{itemize}
 
 
